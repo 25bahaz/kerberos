@@ -1,0 +1,23 @@
+{
+  "name": "kerberos",
+  "version": "1.0.0",
+  "description": "Kerberos-based secure communication: Alice, KDC, Bob",
+  "scripts": {
+    "setup":      "tsx src/setup.ts",
+    "kdc":        "tsx src/kdc.ts",
+    "bob":        "tsx src/bob.ts",
+    "alice":      "tsx src/alice.ts",
+    "alice:flip":  "FLIP_HASH=1 tsx src/alice.ts",
+    "bob:plain":   "PLAINTEXT=1 tsx src/bob.ts",
+    "alice:plain": "PLAINTEXT=1 tsx src/alice.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
